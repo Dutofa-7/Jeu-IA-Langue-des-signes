@@ -42,7 +42,7 @@ async function predict() {
     labelContainer.innerHTML = "";
 
     for (let i = 0; i < maxPredictions; i++) {
-        if (prediction[i].className === signs[currentLevel] && prediction[i].probability > 0.7) {
+        if (prediction[i].className === signs[currentLevel] && prediction[i].probability > 0.5) {
             if (!validationTimer) {
                 validationTimer = setTimeout(() => {
                     nextLevel();
