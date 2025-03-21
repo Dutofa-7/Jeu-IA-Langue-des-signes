@@ -1,0 +1,28 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre la Langue des Signes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Apprends la Langue des Signes</h1>
+    
+    <div id="game-container">
+        <p>Niveau : <span id="level">1</span></p>
+        <p>Signe à réaliser : <span id="sign-name">Oui</span></p>
+        <img id="sign-image" src="signs/oui.png" alt="Signe à apprendre">
+    </br>  
+        <button type="button" onclick="init()">Démarrer</button>
+
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
