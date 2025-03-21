@@ -47,7 +47,7 @@ async function predict() {
                 validationTimer = setTimeout(() => {
                     nextLevel();
                     validationTimer = null;
-                }, 2000);
+                }, 1000);
             }
             return;
         }
